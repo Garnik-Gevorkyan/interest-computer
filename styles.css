@@ -1,0 +1,69 @@
+body {
+    margin = 0;
+    padding = 0;
+}
+
+article {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100px auto 30px;
+}
+header, footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+header {
+  font-size: 50px;
+  padding: 5px;
+  text-shadow: 1px 1px 2px yellow;
+  background-color: rgb(255, 192, 250);
+}
+
+footer {
+  font-style: italic;
+  background-image: linear-gradient(rgb(128, 128, 128), rgb(103, 99, 99))
+}
+
+main {
+  padding: 40px 10px 10px 10px;
+  background-image: linear-gradient(rgb(255, 192, 250), white, grey)
+}
+
+form {
+  display: grid;
+  grid-template: auto auto auto auto / 5em 180px;
+  gap: 10px;
+  width: 220px;
+  margin: 0 auto;
+}
+
+.rounded-box { 
+  width: 180px; 
+  height: 250px; 
+  background-color: rgba(255, 255, 255, 0.4); 
+  border-radius: 15px; /* Adjust the value for more or less rounded corners */ 
+  padding: 20px; 
+  color: rgb(26, 124, 70); 
+  text-align: center; 
+  line-height: 30px; /* Vertically centers the text */ 
+  transition-property: width, height;
+  transition-duration: 1s;
+} 
+
+.rounded-box:hover {
+  width: 220px;
+  height: 270px;
+}
+
+img {
+  width: 100%; /* Makes the image responsive */
+  max-width: 90px; /* Limits the maximum width */
+  height: auto; /* Maintains aspect ratio */
+  display: block;
+  margin: 10px 10px; /* Centers the image */
+  border-radius: 10px; /* Makes the image corners rounded */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow */
+}

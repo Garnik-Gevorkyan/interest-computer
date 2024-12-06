@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Interest Computer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <article>
+      <header>
+        <img
+          src="https://blogs.cfainstitute.org/marketintegrity/files/2014/08/risingrates.jpg"
+          alt="An image of interest rates"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Sofia"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Trirong"
+        />
+        <style>
+          header {
+            font-family: "Trirong", serif;
+          }
+          body {
+            font-family: "Sofia", sans-serif;
+          }
+        </style>
+        <div>Interest</div>
+        <div>🤑</div>
+      </header>
+      <main>
+        <form>
+          <div class="rounded-box">
+            <div>Principal</div>
+            <input id="principal" />
+            <div>Period</div>
+            <select id="period">
+              <option value="360">daily</option>
+              <option value="12">monthly</option>
+              <option value="4">quarterly</option>
+              <option value="1">yearly</option>
+            </select>
+            <div>APR</div>
+            <div>
+              <input
+                type="range"
+                id="apr"
+                min="0.25"
+                max="50"
+                value="2.5"
+                step="0.25"
+              />
+              <output id="aprText">--.--</output>
+            </div>
+            <div>Years</div>
+            <input id="years" />
+          </div>
+        </form>
+        <p>Interest accumulated is <output id="accumulated" /></p>
+        <p>Total at end is <output id="amount" /></p>
+      </main>
+      <footer>
+        <div>© 2024</div>
+        <div>
+          <a
+            href="https://codesandbox.io/p/sandbox/interest-computer-9t9zj7?file=%2Findex.html%3A76%2C23"
+            >Code</a
+          >
+        </div>
+      </footer>
+    </article>
+  </body>
+</html>
